@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="661.6,2868.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1104,2850.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
       <x:String>System.Activities</x:String>
@@ -48,7 +48,7 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="641.6,2768.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="641.6,2645.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="valeurDeBase" />
       <Variable x:TypeArguments="x:String" Name="deviseDeDepart" />
@@ -95,7 +95,7 @@
         <InArgument x:TypeArguments="x:Int32">0</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="600,1836" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://www1.oanda.com/lang/fr/currency/converter/">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="600,1838.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://www1.oanda.com/lang/fr/currency/converter/">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -119,7 +119,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV  quote_currency_car...'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV  quote_currency_car...'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -131,7 +131,7 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0b09970c6ec99b69c31517a39a23c5bc" Selector="&lt;webctrl id='base_currency_caret' tag='DIV' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6a79c2d9-9134-4fba-b264-643d1db140b6" InformativeScreenshot="0b09970c6ec99b69c31517a39a23c5bc" Selector="&lt;webctrl id='base_currency_caret' tag='DIV' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -141,7 +141,7 @@
                         </ui:Target>
                       </ui:Click.Target>
                     </ui:Click>
-                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -153,7 +153,7 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="08f1e8baaff3ce30cdf38e4f3f1af3ce" Selector="[&quot;&lt;webctrl aaname='&quot; + ligne(&quot;deviseDeDepart&quot;).ToString +&quot;' idx='1' parentid='scroll-innerBox-2' tag='SPAN' /&gt;&quot;]">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b05cbde8-de46-466c-ba4b-085b0b10654e" InformativeScreenshot="08f1e8baaff3ce30cdf38e4f3f1af3ce" Selector="[&quot;&lt;webctrl aaname='&quot; + ligne(&quot;deviseDeDepart&quot;).ToString +&quot;' idx='1' parentid='scroll-innerBox-2' tag='SPAN' /&gt;&quot;]">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -163,9 +163,9 @@
                         </ui:Target>
                       </ui:Click.Target>
                     </ui:Click>
-                    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  quote_amount_inp...'" EmptyField="True" sap:VirtualizedContainerService.HintSize="433.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="[ligne(&quot;valeurDeBase&quot;).ToString]">
+                    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Type Into 'INPUT  quote_amount_inp...'" EmptyField="True" sap:VirtualizedContainerService.HintSize="433.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="[ligne(&quot;valeurDeBase&quot;).ToString]">
                       <ui:TypeInto.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="54be9adfc5c8edcce81150e70330aa91" Selector="&lt;webctrl id='quote_amount_input' tag='INPUT' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2175487d-ea58-492a-ae1f-d8de8f120a91" InformativeScreenshot="54be9adfc5c8edcce81150e70330aa91" Selector="&lt;webctrl id='quote_amount_input' tag='INPUT' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -175,7 +175,7 @@
                         </ui:Target>
                       </ui:TypeInto.Target>
                     </ui:TypeInto>
-                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV  quote_currency_car...'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV  quote_currency_car...'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -187,7 +187,7 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="16d633a589d6739236884c3e7b14e199" Selector="&lt;webctrl id='quote_currency_caret' tag='DIV' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5aee6bb8-1926-4a84-84ec-a9428a30b9e4" InformativeScreenshot="16d633a589d6739236884c3e7b14e199" Selector="&lt;webctrl id='quote_currency_caret' tag='DIV' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -197,7 +197,7 @@
                         </ui:Target>
                       </ui:Click.Target>
                     </ui:Click>
-                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -209,7 +209,7 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="74adf6ded9613e2d8cd31079646d3f2f" Selector="[&quot; &lt;webctrl aaname='&quot;+ ligne(&quot;deviseDeFin&quot;).ToString +&quot;' idx='1' parentid='scroll-innerBox-1' tag='SPAN' /&gt;&quot;]">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad7ce547-f8de-449b-9d48-e08b1e33e472" InformativeScreenshot="74adf6ded9613e2d8cd31079646d3f2f" Selector="[&quot; &lt;webctrl aaname='&quot;+ ligne(&quot;deviseDeFin&quot;).ToString +&quot;' idx='1' parentid='scroll-innerBox-1' tag='SPAN' /&gt;&quot;]">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -221,7 +221,7 @@
                     </ui:Click>
                     <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'INPUT  base_amount_input'" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_2">
                       <ui:GetValue.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="8fc45a740b55e623f763276f9ab62cf7" Selector="&lt;webctrl id='base_amount_input' tag='INPUT' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9c94c8be-a18d-4c89-b8cb-ebbf5f1d78ab" InformativeScreenshot="8fc45a740b55e623f763276f9ab62cf7" Selector="&lt;webctrl id='base_amount_input' tag='INPUT' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -276,8 +276,7 @@
       </ui:OpenBrowser.Body>
     </ui:OpenBrowser>
     <ui:ReadTextFile Content="[corpsMail]" DisplayName="Read Text File" FileName="corpsMail.txt" sap:VirtualizedContainerService.HintSize="600,85.6" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-    <ui:ReadTextFile Content="[destinatairesMails]" DisplayName="Read Text File" FileName="destinatairesMails.txt" sap:VirtualizedContainerService.HintSize="600,85.6" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
-    <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[corpsMail.Replace(&quot;[nbLignes]&quot;,nbLignes.ToString)]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="600,146.4" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" IsBodyHtml="True" IsDraft="False" Subject="Traitement meetup RPA - Oiseau-rare" To="benoit.beroule@oiseau-rare.fr">
+    <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[corpsMail.Replace(&quot;[nbLignes]&quot;,nbLignes.ToString)]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="600,146.4" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" IsBodyHtml="True" IsDraft="False" Subject="Traitement meetup RPA - Oiseau-rare" To="benoit.beroule@gmail.com">
       <ui:SendOutlookMail.Files>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
       </ui:SendOutlookMail.Files>

@@ -1,0 +1,23 @@
+<html>
+  <body>
+  <font color="red"><strong>Ce mail est envoyé automatiquement par un robot du futur mais vous pouvez quand même y répondre.</strong></font>
+  <p>
+  <strong><font size="+2"><u>Rapport de traitment - RPA de démonstration (meetup RPA)</u></font></strong>
+ <p> 
+Bonjour, je suis un robot et si vous recevez ce mail ce que vous êtes venus au meetup de l'oiseau rare sur le RPA.
+Si ce n'est pas le cas sachez que vous avez ratez ma conception en direct.
+<p>
+Pour information j'ai traité [nbLignes] opérations devant vos yeux
+<p>
+Bonne soirée à vous. :)
+<p><p>
+
+<font size="-1">
+<a href="https://www.oiseau-rare.fr/">https://www.oiseau-rare.fr</a><br>
+Testez vous sur le RPA -> <a href="https://challenge.oiseau-rare.fr/menu">ici</a><br>
+<br>
+Sachez qu'en accord avec le respect de la protection des données, nous ne garderons pas votre adresse mail en mémoire.
+</font>
+
+</body>
+</html>
